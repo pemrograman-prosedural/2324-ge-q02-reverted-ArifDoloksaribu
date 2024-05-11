@@ -151,7 +151,7 @@ int main(int _argc, char **_argv)
 
         else if(strcmp(argument,"dorm-empty")==0){
             char dorm_name[20];
-            int l=-1;
+            int l=0;
             token = strtok(NULL, "#");
             strcpy(dorm_name, token);
             for(int r = 0; r<h; r++){
@@ -160,13 +160,14 @@ int main(int _argc, char **_argv)
                     break;
                 }
             }
-            if(l != -1){ 
+            if(l == h){ 
+                continue;
+            }
                 for(int y=0; y<i; y++){
                     if(student[y].dorm != NULL && strcmp(student[y].dorm->name, dorm_name) == 0){
                         dorm_empty(&student[y], y, &dorm[l], l); 
                     }
                 }
-            }
         }
 
     }
