@@ -30,6 +30,6 @@ void assign_student(struct student_t *_student, int size, struct dorm_t *_dorm, 
 
 void move_student(struct student_t *_student, int size, struct dorm_t *_dorm, int size_dorm);
 
-void dorm_empty(struct student_t *_student,int size, struct dorm_t *_dorm, int sised);
+void dorm_empty(struct student_t *_student,struct dorm_t *_dorm);
 
 #endif

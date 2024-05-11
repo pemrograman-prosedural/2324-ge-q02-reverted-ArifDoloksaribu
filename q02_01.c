@@ -162,16 +162,16 @@ int main(int _argc, char **_argv)
             }
             if(l != -1){ 
                 continue;
-            
+            }
             for(int b=0; b<i; b++){
                 if(student[i].dorm == NULL){
                 continue;
                 }
                 else if(strcmp(student[b].dorm->name, "dorm[l].name")==0){
-                dorm_empty(&student[b], b, &dorm[l], l);
+                dorm_empty(&student[b], &dorm[l]);
                 }
             }
-        }
+        
     }
     }
     return 0;
