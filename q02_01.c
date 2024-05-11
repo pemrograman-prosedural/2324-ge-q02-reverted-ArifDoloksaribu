@@ -163,7 +163,7 @@ int main(int _argc, char **_argv)
             if(l != -1){ 
                 for(int y=0; y<i; y++){
                     if(student[y].dorm != NULL && strcmp(student[y].dorm->name, dorm_name) == 0){
-                        dorm_empty(&student[y], i, &dorm[l], l); 
+                        dorm_empty(&student[y], y, &dorm[l], l); 
                     }
                 }
             }
