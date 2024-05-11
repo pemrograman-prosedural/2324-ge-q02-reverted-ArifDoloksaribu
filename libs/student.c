@@ -78,6 +78,7 @@ void move_student(struct student_t *_student, int size, struct dorm_t *_dorm, in
 void dorm_empty(struct student_t *_student, int size, struct dorm_t *_dorm, int size_dorm){
  for (int a =0; a<size; a++){
     _student[a].dorm = NULL;
+    --_dorm[a].residents_num;
  } 
  _dorm->residents_num = 0;
 }

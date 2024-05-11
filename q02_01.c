@@ -161,9 +161,9 @@ int main(int _argc, char **_argv)
                 }
             }
             if(l != -1){ 
-                for(int b=0; b<i; b++){
-                    if(student[b].dorm != NULL && strcmp(student[b].dorm->name, dorm_name) == 0){
-                        dorm_empty(&student[b], b, &dorm[l], l); 
+                for(int y=0; y<i; y++){
+                    if(student[y].dorm != NULL && strcmp(student[y].dorm->name, dorm_name) == 0){
+                        dorm_empty(&student[y], i, &dorm[l], l); 
                     }
                 }
             }
